@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Game</title>
+    <link rel="stylesheet" href="./game-resources/style.css" />
+  </head>
+  <body>
+    <div class="game">
+      <section class="game-heading">
+        <h1>Guess A Card &trade;</h1>
+
+        <p class="game-alert hide">Hello there</p>
+        <div class="game-details">
+          Correct Answers: <span id="answers"></span> of 8 pairs
+        </div>
+        <div class="game-details">Sneaks: <span id="sneaks"></span> left</div>
+        <div class="game-details">
+          You have <span id="lives"></span> attempts left
+        </div>
+      </section>
+      <div class="game-grid-section">
+        <section class="game-grid"></section>
+        <div class="game-grid-cover">
+          <div class="game-card-cover" data-id="1"></div>
+          <div class="game-card-cover" data-id="2"></div>
+          <div class="game-card-cover" data-id="3"></div>
+          <div class="game-card-cover" data-id="4"></div>
+          <div class="game-card-cover" data-id="5"></div>
+          <div class="game-card-cover" data-id="6"></div>
+          <div class="game-card-cover" data-id="7"></div>
+          <div class="game-card-cover" data-id="8"></div>
+          <div class="game-card-cover" data-id="9"></div>
+          <div class="game-card-cover" data-id="10"></div>
+          <div class="game-card-cover" data-id="11"></div>
+          <div class="game-card-cover" data-id="12"></div>
+          <div class="game-card-cover" data-id="13"></div>
+          <div class="game-card-cover" data-id="14"></div>
+          <div class="game-card-cover" data-id="15"></div>
+          <div class="game-card-cover" data-id="16"></div>
+        </div>
+      </div>
+      <section class="game-footer">
+        <button class="game-start-btn">Reset Game</button>
+        <button class="game-sneek-btn">Sneak a Peek</button>
+        <button class="game-stop-btn">Show All Cards</button>
+      </section>
+      <section class="game-instruction">
+        <p class="game-instruction-text">
+          Instructions:<br /><br />
+          > For each selected card, choose a corresponding card until all cards
+          are displayed. <br /><br />
+          > Use the "Sneak a Peak" button to briefly display all cards.<br /><br />
+          > The "Show All Cards" button will end the game and display all cards
+          while the "Reset Game" button will cancel the current session and
+          restart the game.
+        </p>
+      </section>
+    </div>
+
+    <script src="./game-resources/app.js"></script>
+  </body>
+</html>
