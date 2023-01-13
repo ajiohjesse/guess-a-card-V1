@@ -2,8 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: roboto;
   --game-main-clr: #646464;
+}
+
+body {
+  font-family: sans-serif;
 }
 
 .hide {
